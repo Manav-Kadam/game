@@ -1,0 +1,160 @@
+*{
+    border: 0;
+    padding: 0;
+    background-color: rgb(161, 208, 223);
+    margin: none;
+}
+.head{
+    color: black;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+#container{
+    position: relative;
+    width: 60%;
+    height: 35rem;
+    background-color: #055052;
+    left: 20%;
+    border-radius: 1rem;
+}
+#trial{
+    position: absolute;
+    width: 11%;
+    height: 5%;
+    background-color:#f3f2c9;
+    border-radius: 3px;
+    text-align: center;
+    top: 1rem;
+    left: 5%;
+    display: none;
+}
+#score{
+    position: absolute;
+    width: 14%;
+    height: 6%;
+    background-color: #f3f2c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    top: 1rem;
+    left: 80%;
+}
+.que{
+    width: 20%;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+#fruitcontainer{
+    position: relative;
+    width: 90%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 6px;
+    top: 3.5rem;
+    left: 5%;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+#instruction{
+    position: absolute;
+    width: 85%;
+    height: 6%;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightgreen;
+    top: 82%;
+    left: 7.5%;
+    border-radius: 5px;
+}
+#startreset{
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    background-color: #f3f2c9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    top: 90%;
+    left: 42.5%;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+
+#gameOver{
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    top: 25%;
+    left: 10%;
+    display: none;
+}
+     
+    
+    .box:active, #startreset:active{
+        background-color: #9C89F6;
+        color: white;
+        box-shadow: 0px 0px #6b54d3; 
+        -moz-box-shadow: 0px 0px #6b54d3; 
+        -webkit-box-shadow: 0px 0px #6b54d3;
+    }
+    .fruit{
+        display: none;
+        position: absolute;
+        cursor: crosshair;
+    }
+    @media ( max-width:1000px){
+    .head{
+       font-size: 2rem;
+       margin-top: 4rem;
+    }
+    #container{
+        width: 80%;
+       left: 10%;}
+       
+       #score{
+           left: 70%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 0;
+           width: 25%;
+       }
+       
+       #startreset{
+           top: 90%;
+           width: 30%;
+           left: 35%;
+       }
+       
+       #gameOver{
+           text-align: center;
+           top: 20%;
+       }
+       #trial{
+           width: 25%;
+       }
+    }
